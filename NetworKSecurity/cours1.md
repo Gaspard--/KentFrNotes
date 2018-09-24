@@ -34,37 +34,37 @@ Good model for networks. Used as reference model for explaining other technologi
 
 7 layers:
 
-7) Applcation
+7. Applcation
 
-Applications over network (like remote display / terminal etc.)
+   Applications over network (like remote display / terminal etc.)
 
-6) Presentation
+6. Presentation
 
-Originally for binary representation differences.
-Usefull for compression & encryption.
+   Originally for binary representation differences.
+   Usefull for compression & encryption.
 
-5) Session
+5. Session
 
-Provides services for session-based applications.
-(file transfer, connection recovery)
+   Provides services for session-based applications.
+   (file transfer, connection recovery)
 
-4) Transport
+4. Transport
 
-Supports connection oriented service.
+   Supports connection oriented service.
 
 --- Subnet ---
 
-3) Network
+3. Network
 
-Controles operation of subnet
+   Controles operation of subnet
 
-2) Data link
+2. Data link
 
-Makes channel reliable.
+   Makes channel reliable.
 
-1) Physical
+1. Physical
 
-Provides unreliable connectionless service, will not correct corrupt data.
+   Provides unreliable connectionless service, will not correct corrupt data.
 
 ## TCP / IP
 
@@ -74,22 +74,22 @@ No layers corresponding to 5) and 6).
 
 4) Application
 
-- HTTP, FTP, TELNET, SMTP, DNS, etc.
+   - HTTP, FTP, TELNET, SMTP, DNS, etc.
 
 3) Transport layer
 
-Two choices:
+   Two choices:
 
-- TCP (Transition Control Protocol) : reliable, connection-oriented
-- UDP (User Datagram Protocol) : unreliable, connectionless (no delay for data recovery)
+   - TCP (Transition Control Protocol) : reliable, connection-oriented
+   - UDP (User Datagram Protocol) : unreliable, connectionless (no delay for data recovery)
 
 2) Internet Layer
 
-Protocol: IP.
-- connectionless and unreliable.
+   Protocol: IP.
+   - connectionless and unreliable.
 
 1) Host to network layer
 
-- No standart protocol. Implementations use Wifi / Ethernet.
- -> advantage: no prescribed technology, therefor versatile
- -> downside: can't connect any 2 devices with tcp / ip
+   - No standart protocol. Implementations use Wifi / Ethernet.
+    -> advantage: no prescribed technology, therefor versatile
+    -> downside: can't connect any 2 devices with tcp / ip
