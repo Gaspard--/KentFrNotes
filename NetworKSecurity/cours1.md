@@ -3,13 +3,13 @@
 ## LAN
 
 LANs usually have a "star" (ie. non cyclic graph) configuration
-Hardware: wifi ad ethernet.
+Hardware: wifi and ethernet.
 
 ## WAN
 
 WAN (different locations): mesh configuration
 point to point links
-Hardware: sattelite, optical fiber.
+Hardware: satelite, optical fiber.
 WANs are of meshes of *routers* which connect *hosts*. Subnet designates the *whole group* of routers.
 
 Multiple routes are possible.
