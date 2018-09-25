@@ -67,7 +67,9 @@ Note: in the real formula, `H` is the frequency *bandwidth*, not the sampling ra
 
 The `log2(V)` term comes from te fact that encoding `V` levels gives us `log2(V)` bits. (Ex: 4 levels gives us 2 bits).
 
-Okish wikipedia aritcle on the subject: [link](https://en.wikipedia.org/wiki/Nyquist_rate)
+[Okish wikipedia aritcle on the subject](https://en.wikipedia.org/wiki/Nyquist_rate)
+
+[Article on undersampling](https://en.wikipedia.org/wiki/Undersampling)
 
 ## Noise
 
