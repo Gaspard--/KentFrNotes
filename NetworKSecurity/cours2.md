@@ -21,7 +21,7 @@ Latency: it's posssible to move data very cheaply physicly, but the latency is h
 ### Analog signals
 
 - amplitude of analog can vary continuonlsy
-- used for radio / phone for 1°° years
+- used for radio / phone for 100 years
 
 ### Digital signals
 
