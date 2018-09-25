@@ -16,7 +16,7 @@ Latency: it's posssible to move data very cheaply physicly, but the latency is h
 
 ## Electronic signals
 
-300 000 km/s in air/space, 200 000 km/s in air
+300 000 km/s in air/space, 200 000 km/s on cable
 
 ### Analog signals
 
