@@ -42,10 +42,12 @@ Increasing rate increasses bps but also increases distortion
 
 ### Nyquist Limit (for distortion)
 
-> H -> difference between high and log freq
-> V -> number  of levels
-> 
-> 2 * H * log2(V) bps
+```
+H -> difference between high and log freq
+V -> number  of levels
+ 
+2 * H * log2(V) bps
+```
 
 !!! Find out if nyquistic frequency is a hard limit. !!!
 
@@ -60,9 +62,11 @@ Using more levels causes SNR to increase.
 
 ### Shanon Limit (for Noise)
 
-> SNR -> signal pover / noise power
-> H -> difference between high and log freq
-> 
-> H * log2(1 + SNR)
+```
+SNR -> signal pover / noise power
+H -> difference between high and log freq
+
+H * log2(1 + SNR)
+```
 
 Accurate for Thermal noise and Cross talk.
