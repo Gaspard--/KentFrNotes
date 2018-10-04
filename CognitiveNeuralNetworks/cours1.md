@@ -34,3 +34,4 @@ Human brain has sall world property. Why isn't epilepsy more common?
 
 Neuron -> detector
 Neurons are passive. Detect concepts. Not binary (somehat broader tuning).
+They can detect pertecular things (such a person)
