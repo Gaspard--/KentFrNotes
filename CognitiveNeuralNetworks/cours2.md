@@ -83,6 +83,49 @@ Also called:
 Reversal potenetial (because current reverses on either side of E)
 Driving potential (flow of ions drives potential towards this value)
 
-Each ion channrk has its own equilibrium potential
+Each ion channel has its own equilibrium potential
 
 Equilibrium of leak channel is the neuron resting potential
+
+Lowest potential = leak channel equilibrium potential.
+
+K+ leaks, and causes the leak channel equilibrium potential
+Na+ and Cl- flows are what cause the equilibrium potential for other channels
+
+Current for an arbitrary channel c:
+
+Ic(t) = Gc(t) * /Gc * (Vm(t) - Ec)
+
+Gc(t): Fraction c channel open at time t
+/Gc: Maximum conuctance if channel fuly open
+Vm(t): Membrane potential at time t
+Ec: Eqilibrium potential for channel
+
+Gl(t) = 1
+
+I_net(t) = Ge(t) * /Ge * (Vm(t) - Ee) + // Excitatory: Na+
+     	   Gi(t) * /Gi * (Vm(t) - Ei) + // Inhibitory: Cl-
+     	           /Gl * (Vm(t) - El)   // Leak: K+
+
+At equilibrium membrane potential I_net(t) = 0
+
+Vm (t + 1) = Vm(t) + dt_Vm * I_net(t)
+      	   = Vm(t) + dt_Vm * [
+	   	   Ge(t) * /Ge * (Ee - Vm(t)) + // Excitatory: Na+
+	 	   Gi(t) * /Gi * (Ei - Vm(t)) + // Inhibitory: Cl-
+     	                   /Gl * (El - Vm(t))   // Leak: K+
+		   ]
+
+dt_Vm is just a time constant.
+Note that I_net has been inverted, so that exictation goes upwards.
+At equilibrium mebrane potential, Vm doesn't change.
+
+At equilibrium:
+
+Vm(t) = (Ge(t) * /Ge * Ee
+       + Gi(t) * /Gi * Ei
+       	       + /Gl * El)
+      / (Ge(t) * /Ge
+       + Gi(t) * /Gi
+       	       + /Gl)
+
