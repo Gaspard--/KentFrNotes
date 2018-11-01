@@ -39,13 +39,13 @@ Assumming a cercle in a square, and pebbles evenly distributed.
 In that case:
 pebbles in circle / pebbles in square
 = Area of circle / area of square
-= Π * a² / area of square
-= Π * a² / 4 * a²
-= Π / 4
+= π * a² / area of square
+= π * a² / 4 * a²
+= π / 4
 
-Uses of the symbol Π: also used for steady state probabillity
+Uses of the symbol π: also used for steady state probabillity
 
-Πx * p(x -> y) = Πy * p(y -> x)
+πx * p(x -> y) = πy * p(y -> x)
 
 ## Metropolis alogrithm
 
@@ -53,7 +53,7 @@ We have a markow chain with states 1 .. N
 
 1. start at state `a`
 2. current state is `a` propose a new random state. Choice has to be symmetric. (This means that you have to think more about choice for the new state if symmetry is impossible)
-3. accept this proposed move to new state `b` with the following acceptance `Paxx = min(1, Πb / Πa)
+3. accept this proposed move to new state `b` with the following acceptance `Paxx = min(1, πb / πa)
 4. goto 2
 
 Probablity for a transition is Pacc * Pchoice
@@ -74,8 +74,8 @@ Probablity for a transition is Pacc * Pchoice
       2. transition to new state
       3 Set i to the current state label
    2. count[i] += 1
-5. Calculate estimated probability for Π(i) as
-Π(i) = count[i] / n
+5. Calculate estimated probability for π(i) as
+π(i) = count[i] / n
 
 'n' and 'm' must be very large numbers
 The purpose of 'm' is to forget the initial state.
