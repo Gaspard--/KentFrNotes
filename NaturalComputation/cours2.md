@@ -53,7 +53,7 @@ We have a markow chain with states 1 .. N
 
 1. start at state `a`
 2. current state is `a` propose a new random state. Choice has to be symmetric. (This means that you have to think more about choice for the new state if symmetry is impossible)
-3. accept this proposed move to new state b with the following acceptance `Paxx = min(1, PIb / PIa)`
+3. accept this proposed move to new state `b` with the following acceptance `Paxx = min(1, PIb / PIa)`
 4. goto 2
 
 Probablity for a transition is Pacc * Pchoice
