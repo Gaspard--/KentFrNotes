@@ -34,7 +34,7 @@ Initial condition and steady state behaviour
 
 # Pebbles, Metropolis, needles
 
-Asumming a cercle in a square, and pebbles evenly distributed.
+Assumming a cercle in a square, and pebbles evenly distributed.
 
 In that case:
 pebbles in circle / pebbles in square
@@ -43,16 +43,16 @@ pebbles in circle / pebbles in square
 = PI * a² / 4 * a²
 = PI / 4
 
-Uses of the symbol PI: also used for steady state probabality
+Uses of the symbol PI: also used for steady state probabillity
 
 PIx * p(x -> y) = PIy * p(y -> x)
 
-Metropolis alogrithm
+## Metropolis alogrithm
 
-We hae a markow chain with states 1 .. N
+We have a markow chain with states 1 .. N
 
-1. start at state a
-2. current state is A propose a new random state. Choice has to be symmetric. (This means that you have to think more about choice for the new state if symmetry is impossible)
+1. start at state 'a'
+2. current state is 'a' propose a new random state. Choice has to be symmetric. (This means that you have to think more about choice for the new state if symmetry is impossible)
 3. accept this proposed move to new state b with the following acceptance `Paxx = min(1, PIb / PIa)`
 4. goto 2
 
