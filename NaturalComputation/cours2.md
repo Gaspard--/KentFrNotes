@@ -32,7 +32,7 @@ Initial condition and steady state behaviour
 - At time T = infinity PT=infinity(si) for each state si
 - under mild conditions, the probability of the end sates does not depend on the initial state.
 
-# Pebbles, Metropois, needles
+# Pebbles, Metropolis, needles
 
 Asumming a cercle in a square, and pebbles evenly distributed.
 
@@ -63,7 +63,7 @@ Probablity for a transition is Pacc * Pchoice
 3. multiply  these values. This will be the transition probabillity
 4. if the transition probabillities to leave a state don't add to 1, then add a self-transition so that all probabilities add to 1.
 
-## Finding strady state probabilities
+## Finding steady state probabilities
 
 1. Construct a Markow chain with states [1, N] 
 2. Initialise a array of N to 0
