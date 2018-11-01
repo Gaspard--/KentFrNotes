@@ -51,17 +51,17 @@ PIx * p(x -> y) = PIy * p(y -> x)
 
 We have a markow chain with states 1 .. N
 
-1. start at state 'a'
-2. current state is 'a' propose a new random state. Choice has to be symmetric. (This means that you have to think more about choice for the new state if symmetry is impossible)
+1. start at state `a`
+2. current state is `a` propose a new random state. Choice has to be symmetric. (This means that you have to think more about choice for the new state if symmetry is impossible)
 3. accept this proposed move to new state b with the following acceptance `Paxx = min(1, PIb / PIa)`
 4. goto 2
 
 Probablity for a transition is Pacc * Pchoice
 
 1. calculate the acceptance rate for each pair of states
-2. calculate the chance chosing a given state (usually a fixed vale)
-3. multiply  these values. This will be the transition probabillity
-4. if the transition probabillities to leave a state don't add to 1, then add a self-transition so that all probabilities add to 1.
+2. calculate the chance chosing a given state (usually a fixed value)
+3. multiply  these values. This will be the transition probability
+4. if the transition probabilities to leave a state don't add to 1, then add a self-transition so that all probabilities add to 1.
 
 ## Finding steady state probabilities
 
