@@ -39,7 +39,7 @@ Requires full duplex.
 
 These mechanisms are known as ARQ.
 
-### Stop-and-Wait AR
+### Stop-and-Wait ARQ
 
 Requires sequence numbers.
 
@@ -56,12 +56,12 @@ Robust mechanism but suffers from same efficiency limitations as basic stop-and-
 - Sender can transmit up to W frames before waiting for RR
 - sender starts timer for each frame
 - While frames are arriving in correct order the reciever will send RR N periodically
-- REceiver discards bad, duplicate, and out-of-sequence frames
+- Receiver discards bad, duplicate, and out-of-sequence frames
 - if a frame is aknowledged before timer runs out, the sender cancels the timer
 - otherwise the sender goes back to that frame and retransmits the data from that point
 
 Not compatible with out of order frames.
-The bigger W, the bigger W. Big W is good when nothing wrong is more efficient but bad in acase of errors.
+The bigger W, the bigger W. A bigger W is more efficient when nothing goes wrong but bad when errors occur.
 
 ### Go-Back-N ARQ with Negative Acknowledgment
 
@@ -87,7 +87,7 @@ Since sending special RR requires round-trip to receive e RR, sender can choose 
 
 - Similar to go-back-N
   - only those individual frames that time ou or for which selective reject (SREJ) is returned are retransmitted
-  - reciver saves ou-of-sequence frames nd reasembles them in corret order when retransitted frames arrive
+  - reciver saves ou-of-sequence frames and reasembles them in corret order when retransitted frames arrive
 - Mnimises number of retransmission but requires extra buffer space and more complex control logic
 
 Throughoutput not affected by errors.
