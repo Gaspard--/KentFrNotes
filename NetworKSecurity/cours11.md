@@ -3,13 +3,13 @@
 Uses packets. 
 End points: host computers
 Routers hande the delivery of the trafic
-Allows to send a pcaket from one specific host to another.
+Allows to send a packet from one specific host to another.
 (Metaphor: letter system)
 
 Functions:
-- routs pakets of data accross a subnet
+- routes packets of data accross a subnet
   - applies to point-to-point
-  - does not concern broadcas
+  - does not concern broadcasts
 - manages congestion in the subnet
   - packets can take different routes
 - transfers packets accross different types of interconnected networks
@@ -24,11 +24,11 @@ Services:
 
 Classes of service:
 - Connectionless (Datagram)
-  - unreliable of data from ent-to-end
-  - use higher solve problems
+  - unreliable delivery of data from ent-to-end
+  - use higher solve problems (???)
   - similar to postal service
 - Connection-oriented (Virtual Circuit)
-  - reliable delivery oof data from end-to-end
+  - reliable delivery of data from end-to-end
   - provides error correction an flow control
   - similar to telephone service
 
@@ -37,8 +37,8 @@ Classes of service:
 - delay due to storage
 
 ## Datagram subnet technology
-- Every packetneeds to carry full source and destination addresses
-  - don't need to remeber anything
+- Every packet needs to carry full source and destination addresses
+  - no need to remember anything
 - Often called a best effort service
   - higher protocol layers deal wth data loss
   - robust, packets are rerouted when links fail
@@ -53,7 +53,7 @@ Classes of service:
   - congetion can be aleviated
   - quality of srvice garantied
   - if path fails, communication lost
-- Packets don't need to carry full dest (or ource) address
+- Packets don't need to carry full dest (or source) address
   - a VC number is allocated when VS is established
 - Usually runs over a connection oriented data link layer
 - expects:
