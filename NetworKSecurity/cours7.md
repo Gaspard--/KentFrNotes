@@ -21,11 +21,11 @@ Some times the check bits are inverted.
 
 - uses a hash code
 - widely used
-- CRC eithe 16 or 32 bitslong
-- A proelry designed N-bit CC will detect
+- CRC either 16 or 32 bits long
+- A propelry designed N-bit CC will detect
   - all single but
   - all double bit
-  - akk idd numbers of bit errors
+  - all odd numbers of bit errors
   - all errors <= N
   - most error bursts > N bits
 - CRCs all detect a variaty of other error including extra zero bytes and changes in the order of bytes
@@ -53,7 +53,7 @@ Some times the check bits are inverted.
 
 ## Hamming code
 
-- All valid codes must differ from each in at leat 3 of their buts (I.e. the Hamming distance has to be at least 3)
+- All valid codes must differ from each in at leat 3 of their bits (I.e. the Hamming distance has to be at least 3)
 
 Data	Hamming distance
 00	00000
